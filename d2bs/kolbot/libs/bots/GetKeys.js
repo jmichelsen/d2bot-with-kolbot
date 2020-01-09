@@ -7,7 +7,7 @@ function GetKeys() {
 			Pather.useWaypoint(6);
 			Precast.doPrecast(true);
 			Pather.journeyTo(25);
-			Pather.moveToPreset(me.area, 2, 580, 0, 0, Config.ClearPath);
+			Pather.moveToPreset(me.area, 2, 580);
 			Attack.kill(getLocaleString(2875));
 			Pickit.pickItems();
 		} catch (countessError) {
@@ -22,7 +22,7 @@ function GetKeys() {
 			Town.doChores();
 			Pather.useWaypoint(74);
 			Precast.doPrecast(true);
-			Pather.moveToPreset(me.area, 2, 357, -3, -3, Config.ClearPath);
+			Pather.moveToPreset(me.area, 2, 357, -3, -3);
 			Attack.kill(250);
 			Pickit.pickItems();
 		} catch (summonerError) {
@@ -37,8 +37,8 @@ function GetKeys() {
 			Town.doChores();
 			Pather.useWaypoint(123);
 			Precast.doPrecast(true);
-			Pather.moveToExit(124, true, Config.ClearPath);
-			Pather.moveToPreset(me.area, 2, 462, 0, 0, Config.ClearPath);
+			Pather.moveToExit(124, true);
+			Pather.moveToPreset(me.area, 2, 462);
 			Attack.kill(526);
 			Pickit.pickItems();
 		} catch (nihlathakError) {

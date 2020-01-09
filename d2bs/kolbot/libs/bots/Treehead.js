@@ -9,7 +9,7 @@ function Treehead() {
 	Pather.useWaypoint(5);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToPreset(me.area, 2, 30, 5, 5, Config.ClearPath)) {
+	if (!Pather.moveToPreset(me.area, 2, 30, 5, 5)) {
 		throw new Error("Failed to move to Treehead");
 	}
 

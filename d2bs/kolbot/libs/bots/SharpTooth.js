@@ -9,7 +9,7 @@ function SharpTooth() {
 	Pather.useWaypoint(111);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToPreset(me.area, 1, 790, 0, 0, Config.ClearPath)) {
+	if (!Pather.moveToPreset(me.area, 1, 790)) {
 		throw new Error("Failed to move to Sharptooth Slayer");
 	}
 

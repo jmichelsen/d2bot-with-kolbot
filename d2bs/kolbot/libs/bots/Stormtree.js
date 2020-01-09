@@ -9,7 +9,7 @@ function Stormtree() {
 	Pather.useWaypoint(79);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToExit(78, true, Config.ClearPath)) {
+	if (!Pather.moveToExit(78, true)) {
 		throw new Error("Failed to move to Stormtree");
 	}
 

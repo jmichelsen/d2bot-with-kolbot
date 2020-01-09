@@ -9,7 +9,7 @@ function Frozenstein() {
 	Pather.useWaypoint(113);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToExit(114, true, Config.ClearPath) || !Pather.moveToPreset(me.area, 2, 460, -5, -5, Config.ClearPath)) {
+	if (!Pather.moveToExit(114, true) || !Pather.moveToPreset(me.area, 2, 460, -5, -5)) {
 		throw new Error("Failed to move to Frozenstein");
 	}
 
