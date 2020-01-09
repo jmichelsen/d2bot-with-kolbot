@@ -51,11 +51,11 @@ function Duriel () {
 
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToExit(getRoom().correcttomb, true, Config.ClearPath)) {
+	if (!Pather.moveToExit(getRoom().correcttomb, true)) {
 		throw new Error("Failed to move to Tal Rasha's Tomb");
 	}
 
-	if (!Pather.moveToPreset(me.area, 2, 152, -11, 3, Config.ClearPath)) {
+	if (!Pather.moveToPreset(me.area, 2, 152, -11, 3)) {
 		throw new Error("Failed to move to Orifice");
 	}
 

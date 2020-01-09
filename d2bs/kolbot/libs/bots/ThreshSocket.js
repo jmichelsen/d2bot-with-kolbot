@@ -9,7 +9,7 @@ function ThreshSocket() {
 	Pather.useWaypoint(112);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToExit(113, false, Config.ClearPath)) {
+	if (!Pather.moveToExit(113, false)) {
 		throw new Error("Failed to move to Thresh Socket");
 	}
 

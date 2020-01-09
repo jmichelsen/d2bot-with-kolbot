@@ -9,7 +9,7 @@ function Izual() {
 	Pather.useWaypoint(106);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToPreset(105, 1, 256, 0, 0, Config.ClearPath)) {
+	if (!Pather.moveToPreset(105, 1, 256)) {
 		throw new Error("Failed to move to Izual.");
 	}
 

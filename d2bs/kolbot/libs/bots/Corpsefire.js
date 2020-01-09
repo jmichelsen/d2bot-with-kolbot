@@ -9,7 +9,7 @@ function Corpsefire() {
 	Pather.useWaypoint(3);
 	Precast.doPrecast(true);
 
-	if (!Pather.moveToExit([2, 8], true, Config.ClearPath) || !Pather.moveToPreset(me.area, 1, 774, 0, 0, Config.ClearPath, true)) {
+	if (!Pather.moveToExit([2, 8], true) || !Pather.moveToPreset(me.area, 1, 774, 0, 0, false, true)) {
 		throw new Error("Failed to move to Corpsefire");
 	}
 
