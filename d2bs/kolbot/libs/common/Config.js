@@ -160,6 +160,7 @@ var Config = {
 		Toggle: false,
 		Mode: 0
 	},
+	ChantRequestAttempts: 0,
 	PublicMode: false,
 	PartyAfterScript: false,
 	Greetings: [],
